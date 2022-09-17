@@ -1,0 +1,15 @@
+<suite name="First Suite">
+
+
+	<test name="Test with params1">
+
+		<parameter name="shortA" value="2" />
+		<parameter name="longB" value="3" />
+	
+
+		<classes>
+			<class name="defaultPack.OpenBrowserTestNG" />
+		</classes>
+	</test>
+	
+</suite>

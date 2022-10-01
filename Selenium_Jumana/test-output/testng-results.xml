@@ -1,17 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-10T15:39:40 IDT" name="Default suite" finished-at="2022-09-10T15:39:45 IDT" duration-ms="5309">
+  <suite started-at="2022-10-01T06:48:54 IDT" name="Default suite" finished-at="2022-10-01T06:49:11 IDT" duration-ms="17351">
     <groups>
     </groups>
-    <test started-at="2022-09-10T15:39:40 IDT" name="Default test" finished-at="2022-09-10T15:39:45 IDT" duration-ms="5309">
-      <class name="defaultPack.TestBing">
-        <test-method signature="testBing()[pri:0, instance:defaultPack.TestBing@158da8e]" started-at="2022-09-10T15:39:40 IDT" name="testBing" finished-at="2022-09-10T15:39:45 IDT" duration-ms="5279" status="PASS">
+    <test started-at="2022-10-01T06:48:54 IDT" name="Default test" finished-at="2022-10-01T06:49:11 IDT" duration-ms="17351">
+      <class name="TrelloTask1.TestLoginTrello">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:TrelloTask1.TestLoginTrello@70e9c95d]" started-at="2022-10-01T06:48:48 IDT" name="beforeSuite" finished-at="2022-10-01T06:48:54 IDT" duration-ms="6242" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testBing -->
-      </class> <!-- defaultPack.TestBing -->
+        </test-method> <!-- beforeSuite -->
+        <test-method signature="loginEmailTest()[pri:0, instance:TrelloTask1.TestLoginTrello@70e9c95d]" started-at="2022-10-01T06:48:54 IDT" name="loginEmailTest" finished-at="2022-10-01T06:48:57 IDT" duration-ms="2488" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginEmailTest -->
+        <test-method signature="loginPasswordTest()[pri:0, instance:TrelloTask1.TestLoginTrello@70e9c95d]" started-at="2022-10-01T06:48:57 IDT" name="loginPasswordTest" finished-at="2022-10-01T06:49:00 IDT" depends-on-methods="TrelloTask1.TestLoginTrello.loginEmailTest" duration-ms="2857" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPasswordTest -->
+        <test-method signature="CreateNewBoardTest()[pri:0, instance:TrelloTask1.TestLoginTrello@70e9c95d]" started-at="2022-10-01T06:49:00 IDT" name="CreateNewBoardTest" finished-at="2022-10-01T06:49:07 IDT" depends-on-methods="TrelloTask1.TestLoginTrello.loginPasswordTest" duration-ms="7365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateNewBoardTest -->
+        <test-method signature="addTitleAndConfirm()[pri:0, instance:TrelloTask1.TestLoginTrello@70e9c95d]" started-at="2022-10-01T06:49:07 IDT" name="addTitleAndConfirm" finished-at="2022-10-01T06:49:11 IDT" depends-on-methods="TrelloTask1.TestLoginTrello.CreateNewBoardTest" duration-ms="4512" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addTitleAndConfirm -->
+      </class> <!-- TrelloTask1.TestLoginTrello -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
